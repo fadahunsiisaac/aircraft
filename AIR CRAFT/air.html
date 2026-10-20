@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Jordan 1 Retro High OG | Sneaker Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="air.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Main">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <a class="logo" href="#" aria-label="Home">
+                <img src="./image/1fb47eae62439eb56c30e9673830d957-removebg-preview.png" alt="Brand logo">
+            </a>
+
+            <ul class="menu" id="menu">
+                <li><a href="#">New arrivals</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+
+            <form class="search" role="search" onsubmit="return false">
+                <label class="visually-hidden" for="search">Search shoes</label>
+                <input id="search" type="search" placeholder="Search shoes">
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Air Jordan 1 Retro High OG</h1>
+                <p class="price">$275</p>
+                <a class="btn" href="#">More details</a>
+            </div>
+            <img class="hero-shoe" src="./image/ff02f7641f6bcb0832c8b9d5c30b660e-removebg-preview.png" alt="Air Jordan 1 Retro High OG sneaker">
+        </section>
+
+        <section class="products" aria-label="Featured shoes">
+            <article class="card">
+                <img src="./image/18ef14ecbc13d8fcffdb0dd99aec1f0c-removebg-preview.png" alt="Nike Cosmic Unity 2">
+                <h2>Nike Cosmic Unity 2</h2>
+                <p class="price">$266</p>
+            </article>
+            <article class="card">
+                <img src="./image/ca49429bdb529a3b6b1b997574690dfe-removebg-preview.png" alt="Nike Dunk Retro">
+                <h2>Nike Dunk Retro</h2>
+                <p class="price">$260</p>
+            </article>
+        </section>
+
+        <section class="gallery" aria-label="Gallery">
+            <img src="./image/dae4ed038fcabd0435fad9ab2094db4e.jpg" alt="Sneaker lifestyle photo 1" loading="lazy">
+            <img src="./image/eaf1fb5d9136edf1758c66f0bada37cd.jpg" alt="Sneaker lifestyle photo 2" loading="lazy">
+            <img src="./image/7e2a744ffc876e2b619a4edf30356430.jpg" alt="Sneaker lifestyle photo 3" loading="lazy">
+        </section>
+    </main>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('.nav');
+        toggle.addEventListener('click', () => {
+            const open = nav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open);
+            toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        });
+    </script>
+</body>
+</html>
